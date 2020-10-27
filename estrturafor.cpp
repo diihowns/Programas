@@ -1,37 +1,39 @@
-#include <stdio.h> // defiune entrada e saida 
-#include <stdlib.h> // fun��es b�sicas do sistemas 
-#include <locale.h>// biblioteca de iidiomas 
+# include  <stdio.h>  // defiune entrada e saida
+# include  <stdlib.h>  // funções básicas do sistemas
+# include  <locale.h> // biblioteca de iidiomas
 
 
 
 
-int main(int argc, char *argv[]) {
-	setlocale(LC_ALL, "Portuguese");
+int  main ( int argc, char * argv []) {
+	setlocale (LC_ALL, " português " );
 	
-float nota, media, total;
-int cont;
+   float nota, total, media;
+   int cont;
 
-   total=0;
-     
-       
-       
-       for (cont=1;cont<=4;cont++)
-       
-       {
-       	
-       	printf("Digite a nota");
-       	scanf("%f", &nota);
-       	total = total + nota;
-       	
-	   }
-media = total /4;
-printf("Resultado:%.f\n", media);
-          
+
+
+    total=0; 
+
+
+
+   for (cont=1;cont<=4;cont++)
+   
+   {
+   	system("color A");
+   	printf("Poderia a nota ? :");
+   	scanf("%f", &nota);
+   	total = total + nota;
+   	
+   }
     
+  
+  media = total /4;
+  printf("O resultado da média é :%f\n", media);
        
 
 
- return 0;
+ return  0 ;
   
   
   }
